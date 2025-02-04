@@ -1,0 +1,10 @@
+name: task-list
+
+services:
+  database:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
